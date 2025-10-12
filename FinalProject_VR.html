@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>My VR Project - Shanshan Chinese</title>
+    <link rel="icon" href="images/tsunami_white-circle-background.svg" /> <!-- color of "--bs-primary-bg-subtle" in dark mode: #031633-->
+
+    <style>
+        html {
+            font-size: calc(16px + 0.390625vw);
+        }
+
+        body {
+            font-family: Georgia, serif;
+        }
+
+        ul {
+            margin-bottom: 0;
+        }
+
+        .headerDiv {
+            padding-top: 9%;
+            padding-bottom: 9%;
+        }
+
+        .mainImage {
+            width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+
+        .contentBody {
+            text-align: justify;
+        }
+
+        .contentBody b {
+            color: #C19138;
+        }
+
+        .learningCycleFigureDiv {
+            width: 100%;
+            text-align: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .learningCycleFigure {
+            width: 40%;
+            height: auto;
+        }
+
+        footer {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .lead {
+            font-size: .9rem;
+        }
+
+        .emailLink {
+            text-decoration: underline;
+        }
+
+        /* Large Screens (i.e., desktop) */
+        @media (max-width: 1199.98px) {
+            .learningCycleFigure, .demoVideo {
+                width: 50%;
+            }
+        }
+
+        /* Medium Screens (i.e., tablet) */
+        @media (max-width: 991.98px) {
+            .learningCycleFigure {
+                width: 60%;
+            }
+
+            .demoVideo {
+                width: 70%;
+            }
+        }
+
+        /* Small Screens (i.e., mobile) */
+        @media (max-width: 767.98px) {
+            .learningCycleFigure {
+                width: 70%;
+            }
+
+            .demoVideo {
+                width: 80%;
+            }
+        }
+
+        .highlight {
+            color: black;
+            background-color: yellow;
+        }
+    </style>
+
+    <script>
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary-subtle" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shanshan Chinese</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="FinalProject_Resources.html">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Beginner</a></li>
+                            <li><a class="dropdown-item" href="#">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="#">Advanced</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="FinalProject_VR.html" aria-current="page">My VR Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://calendly.com/yw123/one-on-one-tutoring">Tutoring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FinalProject_Bio.html">Bio</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="justify-content-end d-none d-xl-flex" role="search">
+                <input id="searchInput" class="form-control me-2" type="text" placeholder="Search current page" aria-label="Search" />
+                <button class="btn btn-outline-light" type="button" onclick="search()">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid">
+        <div class="row headerDiv">
+            <span class="mainTitle display-1 text-center">Taiwanese Kitchen VR</span>
+        </div>
+        <!--
+        <div class="row">
+            <img class="mainImage" src="images/VR-page/taiwan-travel-landscape-modified.jpg" alt="Taiwan Travel Landscape" />
+            <p class="text-center py-2 photoCredit">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.vecteezy.com/free-vector/taiwan-landmark">Taiwan Landmark Vectors by Vecteezy</a>
+            </p>
+        </div>
+        -->
+    </div>
+
+    <!-- Main Image -->
+    <div id="carouselExample" class="carousel slide pb-4">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/VR-page/kitchen-scene-1.png" class="d-block w-100" alt="Taiwanese kitchen scene 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/VR-page/kitchen-scene-2.png" class="d-block w-100" alt="Taiwanese kitchen scene 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/VR-page/kitchen-scene-3.png" class="d-block w-100" alt="Taiwanese kitchen scene 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+
+        <!-- Intro -->
+        <div class="row pt-4 pb-3 px-lg-5 px-md-4 px-2">
+            <div class="col-sm-12">
+                <h3 class="mb-4 text-center">What do you do in Taiwanese Kitchen VR?</h3>
+                <div class="contentBody lh-base">
+                    <p>
+                        This virtual reality (VR) experience is designed for learners of Mandarin Chinese. The goal is for learners to acquire the procedural knowledge of <b>cooking scrambled eggs and tomatoes in an authentic Taiwanese kitchen</b>, which hinges on learners' understanding of cooking instructions in Mandarin Chinese, especially their grasp of the ba construction or the disposal construction in Chinese.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Video -->
+        <div class="row pt-1 pb-3 px-lg-5 px-md-4 px-2">
+            <div class="col-sm-12">
+                <h3 class="mb-4 text-center">Demo Video</h3>
+                <div class="text-center">
+                    <video class="demoVideo" controls>
+                        <source src="images/VR-page/DemoVideo.mp4" type="video/mp4" />
+                        Your browser does not support the video.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background and Rationale -->
+        <div class="row pt-4 pb-3 px-lg-5 px-md-4 px-2">
+            <div class="col-sm-12">
+                <h3 class="mb-4 text-center">Background and Rationale</h3>
+                <div class="contentBody lh-base">
+                    <p>
+                        Here at Shanshan Chinese, we believe that what we do in a language and how we do them are embedded in a social communicative context. Therefore, our Chinese lessons emphasize context building and behavioral performance. Compared to using PowerPoint slides and verbal descriptions to present context and elicit performance, <b>VR’s ability to create an immediate sense of “presence” allows the learner to just “be there,”</b> embodying the communicative role and interpreting the meaning of an utterance or behavior by directly accessing the relevant contextual information.
+                    </p>
+                    <p>
+                        Due to the firm demands for <b>contextualization</b> and <b>embodiment</b> in real-time language use, the current project uses high immersion VR—where the user wears a VR headset and is immersed in the virtual environment created by the headset while the outside world is almost completely shut out—to create context and highlight important aspects of context (e.g., roles of the interlocutors, time and place, physical objects, etc.) to which learners’ attention should be drawn.
+                    </p>
+                    <p>
+                        It is expected that such highly immersive and embodied experience will result in meaningful learning. More specifically, such learning experience should be <b>conducive to building and integrating long-term context-sensitive and sensorimotor-rich memories</b> in the learner’s mind, which in turn should be <b>conducive to achieving automaticity and cultural appropriateness</b> when the learner engages in real-time language use in the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Cycle -->
+        <div class="row py-3 px-lg-5 px-md-4 px-2">
+            <h3 class="mb-4 text-center">Learning Cycle</h3>
+            <div class="contentBody lh-base">
+                <p>
+                    Three pillars are involved to help you successfully learn to use Chinese to cook a homestyle dish with a Taiwanese friend:
+                    <ul>
+                        <li><a><b>Anki flashcards</b>: Learn the relevant vocabulary words using one of the most powerful spaced-repetition software.</a></li>
+                        <li><a><b>Taiwanese kitchen VR</b>: Immerse in an authentic kitchen environment where you interact with 3D objects representative of Taiwanese culture and cook scrambled eggs and tomatoes by following the cooking instructions from your avatar friend.</a></li>
+                        <li><a><b>One-on-one tutoring session with Shanshan</b>: Consolidate what you've learned in VR through doing application activities with Shanshan.</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="learningCycleFigureDiv">
+                <figure class="figure">
+                    <img class="figure-img rounded learningCycleFigure" src="images/VR-page/learning-cycle.jpg" alt="Learning Cycle Figure">
+                    <figcaption class="figure-caption text-center">Three pillars in the learning cycle.</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Production Team -->
+        <div class="row py-3 px-lg-5 px-md-4 px-2">
+            <div class="col-sm-12">
+                <h3 class="mb-4 text-center">Meet the Production Team</h3>
+                <div class="table-responsive-md">
+                    <table class="table align-middle table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Member</th>
+                                <th scope="col">Work</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>Ying-Shan (Jenny) Wu</td>
+                                <td>
+                                    <ul>
+                                        <li><a>Designed the overall learning experience</a></li>
+                                        <li><a>Communicated with Taiwanese artists to make authentic 3D objects</a></li>
+                                        <li><a>Collected sound effects</a></li>
+                                        <li><a>Recorded cooking instructions</a></li>
+                                        <li><a>Made Anki flashcards</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Matthew Steinhauer</td>
+                                <td>
+                                    <ul>
+                                        <li><a>Added lighting, liquid shader, and smoke poof</a></li>
+                                        <li><a>Animated the exhaust fan, fridge door, and cloth</a></li>
+                                        <li><a>Devised step logic to progress through the cooking of the dish</a></li>
+                                        <li><a>Worked with Prof. Shadrick Addy to solve technical problems</a></li>
+                                        <li><a>Worked with Vita Berezina-Blackburn to find and tweak our avatar model</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sebastian King</td>
+                                <td>
+                                    <ul>
+                                        <li><a>Animated the stove fire</a></li>
+                                        <li><a>Animated cutting of vegetables</a></li>
+                                        <li><a>Tailored his hand-tracking rig to accommodate this project</a></li>
+                                        <li><a>Built condition tables for a step manager to make judgements</a></li>
+                                        <li><a>Tested the project to make sure it's both educational and fun</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row bg-primary-subtle text-center mt-5">
+            <div class="col-sm-12">
+                <footer class="py-3">
+                    <p class="lead">&copy; Shanshan Chinese. All rights reserved.</p>
+                    <p class="lead pb-2">Want to chat about foreign language learning or teaching? Contact me at <span class="emailLink">jenny621880@gmail.com</span></p>
+
+                    <!-- Subsection Navigation Bar -->
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a class="btn btn-outline-info btn-sm me-2" href="FinalProject_Home.html">Home</a>
+                            <a class="btn btn-outline-info btn-sm me-2" href="FinalProject_Resources.html">Resources</a>
+                            <a class="btn btn-outline-info btn-sm me-2" href="FinalProject_VR.html">My VR Project</a>
+                            <a class="btn btn-outline-info btn-sm me-2" target="_blank" rel="noopener noreferrer" href="https://calendly.com/yw123/one-on-one-tutoring">Tutoring</a>
+                            <a class="btn btn-outline-info btn-sm me-2" href="FinalProject_Bio.html">Bio</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function search() {
+            const spans = document.querySelectorAll('span');
+            const texts = document.querySelectorAll('p, span, a, h1, h2, h3, h4, h5, h6');
+
+            for (let i = 0; i < spans.length; i++) {
+                if (spans[i].classList.contains('highlight'))
+                    spans[i].classList.remove('highlight')
+            }
+
+            let searchInput = document.getElementById('searchInput');
+            let searchInputText = searchInput.value.trim(); // Note that "searchInput.textContent" doesn't work
+
+            if (searchInputText) {
+                searchInputText = searchInputText.toLowerCase();
+
+                const searchWords = searchInputText.split(' ');
+                let inputTotalLength = 0;
+                searchWords.forEach((element) => inputTotalLength += element.length);
+
+                for (let i = 0; i < texts.length; i++) {
+                    if (texts[i].textContent.toLowerCase().includes(searchInputText)) {
+                        const lowerCaseHTML = texts[i].innerHTML.toLowerCase();
+                        const startIndex = lowerCaseHTML.indexOf(searchWords[0]);
+                        let endIndex = startIndex + searchWords[0].length;
+                        let totalLength = searchWords[0].length;
+                        let done = false;
+
+                        for (let j = 1; j < searchWords.length && !done; ++j) {
+                            const originalEndIndex = endIndex;
+                            let nextChar = lowerCaseHTML.charAt(endIndex);
+                            while (nextChar === '<' || nextChar === '>' || nextChar === ' ') {
+                                endIndex++;
+                                nextChar = lowerCaseHTML.charAt(endIndex);
+                            }
+
+                            const currWordInHTML = lowerCaseHTML.substring(endIndex, endIndex + searchWords[j].length);
+
+                            if (currWordInHTML === searchWords[j]) {
+                                totalLength += searchWords[j].length;
+                                endIndex = endIndex + searchWords[j].length;
+                            } else {
+                                done = true;
+                                endIndex = originalEndIndex;
+                            }
+                        }
+
+                        if (inputTotalLength == totalLength)
+                            texts[i].innerHTML = texts[i].innerHTML.substring(0, startIndex) + '<span class="highlight">' + texts[i].innerHTML.substring(startIndex, endIndex) + '</span>' + texts[i].innerHTML.substring(endIndex);
+                    }
+                }
+
+                searchInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>

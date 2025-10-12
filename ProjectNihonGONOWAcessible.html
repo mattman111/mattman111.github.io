@@ -73,6 +73,13 @@
             text-decoration: underline;
         }
 
+		/* XL Screens */
+		@media (max-width: 1399.98px){
+			.demoVideo {
+                width: 40%;
+            }
+		}
+		
         /* Large Screens (i.e., desktop) */
         @media (max-width: 1199.98px) {
             .learningCycleFigure, .demoVideo {
@@ -106,43 +113,7 @@
             color: black;
             background-color: yellow;
         }
-
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .gallery-item {
-            background-color: transparent;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            overflow: hidden;
-            width: 200px; /* Fixed width for consistency */
-            text-align: center;
-            padding-bottom: 10px;
-        }
-        .gallery-item a {
-            text-decoration: none;
-            color: inherit;
-            display: block; /* Make the whole item clickable */
-        }
-        .gallery-item img {
-            max-width: 100%;
-            height: 150px; /* Fixed height for consistency */
-            object-fit: cover; /* Ensures images cover the area without distortion */
-            display: block; /* Removes extra space below image */
-            margin-bottom: 10px;
-        }
-        .gallery-item p {
-            margin: 0 10px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
     </style>
-
-</head>
 
     <script>
     </script>
@@ -174,82 +145,53 @@
     <!-- Header -->
     <div class="container-fluid">
         <div class="row headerDiv">
-            <span class="mainTitle display-1 text-center">Project Gallery</span>
+            <span class="mainTitle display-1 text-center">NihonGO NOW! Acessible Version</span>
         </div>
     </div>
 
-    <!-- Gallery -->
+    <!-- Main Image -->
 
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <a href="ProjectJapaneseOffice2025.html">
-                <img src="images/JapaneseOffice_2025.jpg" alt="A photo of a student looking into a VR world resembling an office in Japan.">
-                <p>Japanese Office 2025</p>
-            </a>
-        </div>
+                <div class="d-flex justify-content-center">
+                    <img src="images/NihonGO_NOW!_Accessible_2020.jpg" class="d-block" alt="A overview picture of Japanese Office's environment." margin="auto">
+                </div>
 
-        <div class="gallery-item">
-            <a href="ProjectTaiwaneseKitchen2025.html">
-                <img src="images/TaiwaneseKitchenVR_2025.jpg" alt="A photo of a kitchen in Taiwan">
-                <p>Taiwanese Kitchen 2025</p>
-            </a>
-        </div>
 
-        <div class="gallery-item">
-            <a href="ProjectARNihonGONOW.html">
-                <img src="images/NihonGO_NOW!_AR_2024.jpg" alt="Image of AR enchanced visuals projecting overtop of textbook page on Japanese demonstratives.">
-                <p>AR Enchanced NihonGO NOW! 2024</p>
-            </a>
-        </div>
-
-        <div class="gallery-item">
-            <a href="ProjectOnomaVR2022.html">
-                <img src="images/OnomaVR_2022.jpg" alt="Dirty dishes in a sink">
-                <p>OnomaVR 2022</p>
-            </a>
-        </div>
-
-                <div class="gallery-item">
-            <a href="ProjectNihonGONOWAcessible.html">
-                <img src="images/NihonGO_NOW_Accessible_2020.jpg" alt="A image of a proposal titled NihonGO NOW Accessible Version">
-                <p>Accessible NihonGO NOW! 2020</p>
-            </a>
-        </div>
-
-        </div>
-
-          <!-- Lower Header -->
+    <!-- Main Content -->
     <div class="container-fluid">
-        <div class="row headerDiv">
-            <span class="mainTitle display-1 text-center">Project Affiliations</span>
-        </div>
-    </div>
 
-    <!-- Gallery -->
-
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <a href="ProjectCJP.html">
-                <img src="images/CJP_Icon.jpg" alt="A photo of CJP's Icon'">
-                <p>Classic Japanese Portal</p>
-            </a>
+        <!-- Intro -->
+        <div class="row pt-4 pb-3 px-lg-5 px-md-4 px-2">
+            <div class="col-sm-12">
+                <h3 class="mb-4 text-center">What do you do in "AR Enchanced NihonGO NOW!"?</h3>
+                <div class="contentBody lh-base">
+                    <p>
+This project aims to make the “NihonGO NOW!” textbook fully accessible to Japanese learners who are blind or dyslexic. To achieve this, we produced a mock audiobook of ACT 4 that integrates English narration with the textbook's Japanese audio examples. The production process was significant—editing the audio for ACT 4 alone required over 30 hours of work. Driven by the principle that education is a human right and accessibility is non-negotiable, this project demanded that I enhance my audio production skills, developing a workflow to efficiently process the large volume of material on a tight deadline.
+                      </p>
+                </div>
+            </div>
         </div>
 
-        <div class="gallery-item">
-            <a href="ProjectOniKanji.html">
-                <img src="images/OniKanji_Icon.jpg" alt="A photo of the OniKanji girl">
-                <p>OniKanji</p>
-            </a>
+        <!-- Demo Video -->
+        <div class="row pt-1 pb-3 px-lg-5 px-md-4 px-2">
+            <div class="col-sm-12">
+                <h3 class="mb-4 text-center">Examples of NihonGO NOW! Accessible Version</h3>
+                                <div class="d-flex justify-content-center">
+                    <img src="images/NihonGO_NOW!_ACT4BTS1.jpg" class="d-block" alt="A overview picture of Japanese Office's environment." margin="auto">
+                </div>
+                <div class="text-center">
+                    <audio controls>
+  <source src="audio/4-1 Male Edited.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+                </div>
+            </div>
         </div>
-        </div>
-
-
 
 
         <!-- Footer -->
         <div class="row text-center mt-4">
             <div class="col-sm-12">
-                  <footer class="pt-3 pb-2">
+                <footer class="pt-3 pb-2">
                     <p class="lead">&copy; Matthew Steinhauer. All rights reserved.</p>
                     <p class="lead">Want to chat about VR, Education, or Language Learning? Contact me at <span class="emailLink">steinhauer.16@osu.edu</span></p>
                     <p class="lead">LinkedIn: <span class="emailLink">https://www.linkedin.com/in/matthew-steinhauer-6247331a6/</span></p>
